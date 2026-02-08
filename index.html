@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal - From Lingesh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --valentine-red: #e63946;
+            --soft-pink: #ffafcc;
+            --light-pink: #ffc2d1;
+            --ivory: #fff0f3;
+            --gold: #ffd166;
+            --deep-red: #a4161a;
+            --romantic-purple: #9d4edd;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--ivory);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(230, 57, 70, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(157, 78, 221, 0.05) 0%, transparent 20%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Romantic Header */
+        .valentine-header {
+            background: linear-gradient(135deg, var(--valentine-red) 0%, var(--romantic-purple) 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 8px solid var(--gold);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .valentine-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        .from-lingesh {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background-color: white;
+            color: var(--valentine-red);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Opening Message */
+        .opening-message {
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--valentine-red);
+        }
+
+        .message-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: var(--valentine-red);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .message-text {
+            font-size: 1.2rem;
+            color: #555;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+        }
+
+        .signature {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: var(--valentine-red);
+            margin-top: 30px;
+        }
+
+        /* Countdown Timer for Valentine's Day */
+        .countdown-section {
+            background: linear-gradient(135deg, var(--valentine-red) 0%, var(--romantic-purple) 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 50px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .countdown-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: var(--gold);
+        }
+
+        .countdown-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .countdown-box {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px 20px;
+            min-width: 130px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .countdown-value {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            opacity: 0.9;
+        }
+
+        /* Reasons Section */
+        .reasons-section {
+            margin: 60px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--deep-red);
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background-color: var(--gold);
+            border-radius: 2px;
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .reason-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--soft-pink);
+        }
+
+        .reason-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .reason-number {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--light-pink);
+            opacity: 0.5;
+        }
+
+        .reason-icon {
+            font-size: 2.8rem;
+            color: var(--valentine-red);
+            margin-bottom: 25px;
+        }
+
+        .reason-title {
+            font-size: 1.5rem;
+            color: var(--deep-red);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Love Notes Section (Replacing Image Gallery) */
+        .love-notes-section {
+            margin: 60px 0;
+        }
+
+        .love-notes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .love-note {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid var(--valentine-red);
+            transition: transform 0.3s;
+        }
+
+        .love-note:hover {
+            transform: translateY(-5px);
+        }
+
+        .note-icon {
+            font-size: 2.5rem;
+            color: var(--valentine-red);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .note-content {
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .note-date {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--valentine-red);
+            font-weight: 500;
+        }
+
+        /* Memory Timeline (Replacing Image Gallery) */
+        .timeline-section {
+            margin: 60px 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--soft-pink), var(--valentine-red));
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 70px;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 70px;
+        }
+
+        .timeline-content {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .timeline-content:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            transform: rotate(45deg);
+            top: 20px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content:after {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content:after {
+            left: -10px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--valentine-red) 0%, var(--romantic-purple) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 1;
+            top: 15px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-icon {
+            right: -25px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-icon {
+            left: -25px;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--valentine-red);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Love Meter */
+        .love-meter-section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .meter-container {
+            height: 40px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            margin: 40px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--soft-pink) 0%, var(--valentine-red) 100%);
+            border-radius: 20px;
+            width: 0%;
+            transition: width 3s ease-in-out;
+        }
+
+        .meter-text {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--valentine-red);
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* The Proposal */
+        .proposal-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .big-question {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: var(--valentine-red);
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            line-height: 1.3;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .proposal-btn {
+            padding: 25px 60px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .yes-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+        }
+
+        .yes-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(76, 175, 80, 0.3);
+        }
+
+        .no-btn {
+            background: linear-gradient(135deg, #f44336 0%, #c62828 100%);
+            color: white;
+        }
+
+        .no-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(244, 67, 54, 0.3);
+        }
+
+        .response-message {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            display: none;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        .valentine-footer {
+            background: linear-gradient(135deg, var(--valentine-red) 0%, var(--romantic-purple) 100%);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 8px solid var(--gold);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            color: var(--gold);
+        }
+
+        .footer-message {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 1rem;
+            color: var(--light-pink);
+        }
+
+        /* Floating Hearts */
+        .floating-heart {
+            position: fixed;
+            font-size: 1.5rem;
+            color: var(--soft-pink);
+            opacity: 0;
+            z-index: -1;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .valentine-title {
+                font-size: 2.8rem;
+            }
+            
+            .from-lingesh {
+                font-size: 2rem;
+            }
+            
+            .big-question {
+                font-size: 3rem;
+            }
+            
+            .proposal-btn {
+                padding: 20px 40px;
+                font-size: 1.5rem;
+            }
+            
+            .opening-message, .love-meter-section, .countdown-section {
+                padding: 40px 25px;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 80px !important;
+                padding-right: 20px !important;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content:after,
+            .timeline-item:nth-child(even) .timeline-content:after {
+                left: -10px;
+                right: auto;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-icon,
+            .timeline-item:nth-child(even) .timeline-icon {
+                left: 5px;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reasons-grid, .love-notes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .buttons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .countdown-box {
+                min-width: 100px;
+                padding: 20px 15px;
+            }
+            
+            .countdown-value {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Valentine's Day Header -->
+    <header class="valentine-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="valentine-title">Valentine's Day</h1>
+                <div class="from-lingesh">From Lingesh</div>
+                <p style="font-size: 1.3rem; margin-bottom: 15px;">The day my heart chooses to ask the most important question</p>
+                <div class="date-badge">February 14th</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Opening Message -->
+        <section class="opening-message">
+            <h2 class="message-title">My Dearest Love,</h2>
+            <p class="message-text">
+                On this special Valentine's Day, I want to express what you mean to me. From the moment you came into my life, everything changed. You brought colors to my world, music to my silence, and love to my heart.
+            </p>
+            <p class="message-text">
+                Today, on the most romantic day of the year, I want to take our relationship to the next level. I've been dreaming about this moment for a long time, and I can't think of a better day to ask you the most important question of my life.
+            </p>
+            <div class="signature">- Your Lingesh</div>
+        </section>
+
+        <!-- Countdown to Valentine's Day -->
+        <section class="countdown-section">
+            <h2 class="countdown-title">Countdown to Valentine's Day</h2>
+            <p class="countdown-subtitle">Every second brings us closer to the most romantic day of the year, and to the moment I get to ask you the most important question</p>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <div class="countdown-value" id="valentineDays">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="valentineHours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="valentineMinutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value" id="valentineSeconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Section -->
+        <section class="reasons-section">
+            <h2 class="section-title">Why I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3 class="reason-title">Your Beautiful Smile</h3>
+                    <p>Your smile is the first thing I think about when I wake up and the last thing I remember before I sleep. It lights up my entire world.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="reason-title">Your Kind Heart</h3>
+                    <p>You have the most caring and compassionate heart. You always put others before yourself and spread love wherever you go.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="reason-title">You're My Star</h3>
+                    <p>You guide me through dark times and shine brightly in my life. You're my constant, my North Star, my everything.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">04</div>
+                    <div class="reason-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="reason-title">Your Unconditional Support</h3>
+                    <p>You've always believed in me, even when I didn't believe in myself. Your support means the world to me.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Notes Section -->
+        <section class="love-notes-section">
+            <h2 class="section-title">Love Notes for You</h2>
+            <div class="love-notes-container">
+                <div class="love-note">
+                    <div class="note-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="note-content">"Every moment with you feels like a beautiful dream I never want to wake up from."</p>
+                    <div class="note-date">- Today and Always</div>
+                </div>
+                
+                <div class="love-note">
+                    <div class="note-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <p class="note-content">"You are the moon of my life, lighting up my darkest nights with your gentle glow."</p>
+                    <div class="note-date">- Forever Yours</div>
+                </div>
+                
+                <div class="love-note">
+                    <div class="note-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <p class="note-content">"Your love is the sunshine that brightens even my cloudiest days and warms my coldest moments."</p>
+                    <div class="note-date">- Eternally</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Timeline -->
+        <section class="timeline-section">
+            <h2 class="section-title">Our Beautiful Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Day We Met</div>
+                        <p>The moment I saw you, I knew my life would never be the same. Your smile captured my heart instantly.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">First Date</div>
+                        <p>That magical evening when we talked for hours and I realized I had found someone truly special.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Falling in Love</div>
+                        <p>With each passing day, I fell deeper in love with your kindness, intelligence, and beautiful soul.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Today</div>
+                        <p>Valentine's Day - the perfect day to ask you to be mine forever and start our happily ever after.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Meter -->
+        <section class="love-meter-section">
+            <h2 class="section-title">My Love For You</h2>
+            <p style="color: #555; margin-bottom: 20px; font-size: 1.1rem;">This meter shows just a fraction of how much you mean to me. My actual love for you is immeasurable.</p>
+            <div class="meter-container">
+                <div class="meter-fill" id="loveMeter"></div>
+            </div>
+            <div class="meter-text" id="meterText">Infinite Love</div>
+            <button class="proposal-btn yes-btn" style="margin: 30px auto 0; padding: 20px 40px;" id="measureLoveBtn">
+                <i class="fas fa-heartbeat"></i> Measure My Love
+            </button>
+        </section>
+
+        <!-- The Proposal -->
+        <section class="proposal-section">
+            <h2 class="section-title">The Most Important Question</h2>
+            <div class="big-question">Will You Be My Valentine Forever?</div>
+            
+            <div class="buttons-container">
+                <button class="proposal-btn yes-btn" id="yesBtn">
+                    <i class="fas fa-heart"></i> Yes, Forever!
+                </button>
+                <button class="proposal-btn no-btn" id="noBtn">
+                    <i class="fas fa-times"></i> No
+                </button>
+            </div>
+            
+            <div class="response-message" id="responseMessage">
+                <h3 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--valentine-red); margin-bottom: 25px;" id="responseTitle"></h3>
+                <p style="font-size: 1.3rem; color: #555; line-height: 1.8;" id="responseText"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Valentine's Footer -->
+    <footer class="valentine-footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-title">My Forever Valentine</h2>
+                <p class="footer-message">
+                    No matter what your answer is today, I want you to know that you are the most important person in my life. 
+                    You've changed me for the better, and I will always cherish every moment we've shared and look forward to every moment yet to come.
+                </p>
+                <p class="footer-message" style="font-family: 'Dancing Script', cursive; font-size: 2rem;">
+                    With all my heart, today and always
+                </p>
+                <div style="margin-top: 30px; font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--gold);">
+                    Lingesh
+                </div>
+                <div class="copyright">
+                    © 2026 Valentine's Day Proposal | Made with <i class="fas fa-heart" style="color: #ffc2d1;"></i> for someone incredibly special
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Floating hearts animation
+        function createFloatingHearts(count) {
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'floating-heart';
+                    heart.innerHTML = '❤';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.top = '100vh';
+                    heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                    heart.style.color = getRandomColor();
+                    document.body.appendChild(heart);
+                    
+                    // Animation
+                    const duration = Math.random() * 4 + 3;
+                    heart.animate([
+                        { transform: 'translateY(0) rotate(0deg)', opacity: 0.8 },
+                        { transform: `translateY(-100vh) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                    ], {
+                        duration: duration * 1000,
+                        easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)'
+                    });
+                    
+                    // Remove after animation
+                    setTimeout(() => {
+                        if (document.body.contains(heart)) {
+                            document.body.removeChild(heart);
+                        }
+                    }, duration * 1000);
+                }, i * 200);
+            }
+        }
+        
+        function getRandomColor() {
+            const colors = ['#e63946', '#ffafcc', '#9d4edd', '#ffd166'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+        
+        // Valentine's Day Countdown Timer
+        function startValentineCountdown() {
+            // Set target date to February 14th of current year
+            const now = new Date();
+            let targetYear = now.getFullYear();
+            let targetDate = new Date(targetYear, 1, 14, 0, 0, 0); // Feb 14 of current year
+            
+            // If current date is past Feb 14, target next year
+            if (now.getMonth() > 1 || (now.getMonth() === 1 && now.getDate() > 14)) {
+                targetYear++;
+                targetDate = new Date(targetYear, 1, 14, 0, 0, 0);
+            }
+            
+            function updateCountdown() {
+                const now = new Date();
+                const diff = targetDate - now;
+                
+                if (diff <= 0) {
+                    // It's Valentine's Day!
+                    document.getElementById('valentineDays').textContent = '00';
+                    document.getElementById('valentineHours').textContent = '00';
+                    document.getElementById('valentineMinutes').textContent = '00';
+                    document.getElementById('valentineSeconds').textContent = '00';
+                    
+                    // Update countdown title
+                    document.querySelector('.countdown-title').textContent = "It's Valentine's Day!";
+                    document.querySelector('.countdown-subtitle').textContent = "The most romantic day of the year is here!";
+                    
+                    return;
+                }
+                
+                // Calculate days, hours, minutes, seconds
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                // Update display
+                document.getElementById('valentineDays').textContent = days.toString().padStart(2, '0');
+                document.getElementById('valentineHours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('valentineMinutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('valentineSeconds').textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            // Update immediately and every second
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        
+        // Initialize with floating hearts
+        window.addEventListener('load', function() {
+            createFloatingHearts(10);
+            
+            // Start Valentine's Day countdown
+            startValentineCountdown();
+            
+            // Initialize love meter
+            setTimeout(() => {
+                document.getElementById('loveMeter').style.width = '95%';
+                document.getElementById('meterText').textContent = "My Love For You Is Infinite";
+            }, 1000);
+        });
+        
+        // Create occasional floating hearts
+        setInterval(() => {
+            createFloatingHearts(2);
+        }, 5000);
+        
+        // Love Meter Interaction
+        document.getElementById('measureLoveBtn').addEventListener('click', function() {
+            const meter = document.getElementById('loveMeter');
+            const text = document.getElementById('meterText');
+            
+            // Reset meter
+            meter.style.width = '0%';
+            text.textContent = "Measuring...";
+            
+            // Animate meter
+            setTimeout(() => {
+                meter.style.width = '100%';
+                
+                // Update text as meter fills
+                const intervals = [
+                    {percent: 25, text: "You're Amazing"},
+                    {percent: 50, text: "You're My Everything"},
+                    {percent: 75, text: "My Heart Beats For You"},
+                    {percent: 100, text: "Infinite Love!"}
+                ];
+                
+                intervals.forEach(interval => {
+                    setTimeout(() => {
+                        if (meter.style.width === `${interval.percent}%` || interval.percent === 100) {
+                            text.textContent = interval.text;
+                        }
+                    }, (interval.percent / 100) * 3000);
+                });
+                
+                // Celebration
+                setTimeout(() => {
+                    createFloatingHearts(15);
+                }, 3200);
+            }, 100);
+        });
+        
+        // Proposal Buttons
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const responseMessage = document.getElementById('responseMessage');
+        const responseTitle = document.getElementById('responseTitle');
+        const responseText = document.getElementById('responseText');
+        
+        // Yes button click
+        yesBtn.addEventListener('click', function() {
+            responseTitle.textContent = "You Said YES!";
+            responseText.innerHTML = "You've made this the happiest Valentine's Day of my life! <br><br>I promise to love you, cherish you, and make you smile every single day. <br><br>This is the beginning of our beautiful forever together. Happy Valentine's Day, my love!";
+            responseMessage.style.display = 'block';
+            
+            // Celebration
+            createFloatingHearts(40);
+            
+            // Change background color for celebration
+            document.body.style.backgroundColor = '#f0fff0';
+            setTimeout(() => {
+                document.body.style.backgroundColor = '';
+            }, 3000);
+            
+            // Play celebration animation
+            celebrateValentine();
+            
+            // Scroll to response
+            responseMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // No button click (with fun interaction)
+        let noClickCount = 0;
+        noBtn.addEventListener('click', function() {
+            noClickCount++;
+            
+            if (noClickCount === 1) {
+                responseTitle.textContent = "Are You Sure, My Love?";
+                responseText.innerHTML = "Take a moment to think about it. I promise to make every Valentine's Day special for you and love you more with each passing day.";
+                responseMessage.style.display = 'block';
+                
+                // Move button randomly
+                moveButtonRandomly();
+            } else if (noClickCount === 2) {
+                responseTitle.textContent = "Please Reconsider";
+                responseText.innerHTML = "My heart beats only for you. Give me a chance to prove that I'll be the best Valentine you could ever have, today and every day.";
+                responseMessage.style.display = 'block';
+                
+                // Move button again
+                moveButtonRandomly();
+            } else if (noClickCount >= 3) {
+                responseTitle.textContent = "I'll Never Give Up On Us";
+                responseText.innerHTML = "Even if you say no today, I'll keep trying because you're worth every effort. My love for you is unconditional and will last beyond this Valentine's Day and forever.";
+                responseMessage.style.display = 'block';
+                
+                // Reset position
+                noBtn.style.position = 'static';
+                noBtn.style.left = '';
+                noBtn.style.top = '';
+            }
+            
+            // Scroll to response
+            responseMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Function to move button randomly
+        function moveButtonRandomly() {
+            noBtn.style.position = 'relative';
+            const x = Math.random() * 200 - 100;
+            const y = Math.random() * 100 - 50;
+            noBtn.style.left = x + 'px';
+            noBtn.style.top = y + 'px';
+        }
+        
+        // Celebration function for Valentine's Day
+        function celebrateValentine() {
+            // Create lots of hearts
+            createFloatingHearts(60);
+            
+            // Add celebration text to page
+            const celebrationText = document.createElement('div');
+            celebrationText.innerHTML = '💖 HAPPY VALENTINE\'S DAY! 💖';
+            celebrationText.style.position = 'fixed';
+            celebrationText.style.top = '50%';
+            celebrationText.style.left = '50%';
+            celebrationText.style.transform = 'translate(-50%, -50%)';
+            celebrationText.style.fontSize = '4rem';
+            celebrationText.style.fontWeight = 'bold';
+            celebrationText.style.color = '#e63946';
+            celebrationText.style.zIndex = '9999';
+            celebrationText.style.pointerEvents = 'none';
+            celebrationText.style.textShadow = '0 0 15px white';
+            celebrationText.style.textAlign = 'center';
+            document.body.appendChild(celebrationText);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                if (document.body.contains(celebrationText)) {
+                    document.body.removeChild(celebrationText);
+                }
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
